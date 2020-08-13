@@ -1,5 +1,277 @@
 * {
-margin: 0;
-padding: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+/* div {
+  border: 2px solid #e43a74;
+} */
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+h1 {
+  display: block;
+  font-size: 2em;
+  /* margin-block-start: 0.67em; */
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+li {
+  padding: 0px 10px;
+}
+
+a {
+  color: rgb(229, 226, 226);
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  background-color: rgb(6, 56, 90);
+  color: white;
+  margin-bottom: 0;
+  padding: 25px;
+}
+
+/* Header */
+.navigation-panel {
+  /* position: fixed; */
+  width: 100%;
+  background-color: rgb(6, 56, 90);
+  color: rgb(229, 226, 226);
+  font-weight: bold;
+  font-size: large;
+  padding: 15px 20px;
+}
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.left-list {
+  width: 55%;
+  float: left;
+  margin-left: 20px;
+  margin-top: 12px;
+}
+.right-list {
+  width: 22%;
+  float: right;
+}
+.left-list li,
+.right-list li {
+  display: inline-block;
+}
+
+/* cover Image */
+.cover-image {
+  padding-top: 150px;
+  padding-bottom: 50px;
+  background: linear-gradient(rgb(255, 254, 254), transparent 80%),
+    linear-gradient(to top, rgb(6, 56, 90), transparent 10%),
+    url(../img/QQlYYFCqcnw.jpg) no-repeat center/cover;
+}
+.cover-content {
+  padding-top: 50px;
+  color: whitesmoke;
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.main-title {
+  font-size: 3.5em;
+  text-shadow: -3px -1.5px 0.2px rgb(29, 17, 100);
+}
+.circle-image {
+  object-position: center;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 10px 15px rgba(7, 16, 68, 0.4);
+}
+
+/* Main Content of the page */
+.main-content {
+  width: 87%;
+  margin: 0 auto;
+}
+.first-block,
+.second-block {
+  margin: 55px 30px;
+}
+.three-columns {
+  margin: 0;
+  width: 100%;
+  overflow: auto;
+  padding: 15px;
+}
+.columns {
+  width: 33.32%;
+  margin-left: 0;
+  margin-right: 0;
+  text-align: center;
+  float: right;
+  margin-bottom: 100px;
+}
+.clearall:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.first-block img,
+.second-block img {
+  margin: 0 10px;
+  width: 30%;
+  height: 30%;
+  box-shadow: 0px 0px 10px 3px rgba(2, 61, 39, 0.8);
+}
+.first-block img {
+  float: right;
+}
+.first-block p,
+.second-block p {
+  margin: 0 auto;
+  width: 90%;
+  text-align: justify;
+  padding: 15px 5px 15px 5px;
+  box-shadow: 0px 3px 10px 5px rgb(3 56 51);
+}
+
+.second-block img {
+  float: left;
+}
+
+.second-block h1,
+.first-block h1 {
+  text-align: center;
+}
+
+.columns p {
+  line-height: 1.4;
+  margin: auto;
+  max-width: 80%;
+  padding-bottom: 10px;
+  text-align: justify;
+  padding-top: 15px;
+}
+
+.columns h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 2em;
+}
+.columns img {
+  margin: 0 auto;
+  width: 80%;
+  height: 30%;
+  box-shadow: 0px 2px 18px 0.5px rgb(53 53 43 / 80%);
+}
+
+.profile-image {
+  vertical-align: middle;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  border: solid 2px gray;
+  border-radius: 50%;
+}
+
+/* #tranditions,
+#food,
+#sea,
+#mountains,
+#desert {
+  scroll-margin-top: 4em;
+} */
+
+.plus-icon {
+  background-color: white;
+  position: fixed;
+  bottom: 12%;
+  right: 1em;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: solid white;
+}
+
+:target {
+  box-shadow: 0px 0px 10px 15px rgba(0, 0, 0, 0.4);
+}
+
+a:hover {
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.circle-image:hover,
+.profile-image:hover {
+  box-shadow: 0px 0px 10px 15px rgba(0, 0, 0, 0.8);
+}
+
+/*  when the screen is big */
+/* @media (min-width: 902px) and (max-width: 1600px) {
+  .cover-content {
+    margin: 0 auto;
+    width: 85%;
+  }
+
+  .in-table {
+    width: 33.2%;
+    margin-bottom: 100px;
+  }
+
+  .in-table p {
+    max-width: 80%;
+  }
+
+  .table-image {
+    margin-bottom: 20px;
+    width: 150;
+    height: 150;
+} */
+
+/* smaller sreen */
+@media (max-width: 830px) {
+  .cover-image {
+    padding-top: 197px;
+  }
+
+  .left-list {
+    text-align: center;
+    width: 100%;
+    float: none;
+    margin-top: 27px;
+  }
+
+  .right-list {
+    text-align: center;
+    width: 100%;
+    float: none;
+  }
+
+  .cover-content  {
+    margin: 0 auto;
+    width: 85%;
+  }
+
+  .columns {
+    width: 100%;
+  }
+
+  .columns p {
+    max-width: 60%;
+  }
+
+  .columns img {
+    margin-bottom: 20px;
+    width: 60%;
+    height: 60%;
+  }
 
